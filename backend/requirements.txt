@@ -1,0 +1,15 @@
+fastapi==0.110.0
+uvicorn[standard]==0.25.0
+pydantic==2.5.3
+starlette==0.36.2
+Pillow==10.0.0
+moviepy==1.0.3
+numpy==1.26.4
+aiofiles==23.2.1
+imageio==2.31.1
+imageio-ffmpeg==0.4.9
+tqdm==4.66.1
+# Optional (install manually if you want real image generation and TTS):
+# torch
+# diffusers
+# TTS
