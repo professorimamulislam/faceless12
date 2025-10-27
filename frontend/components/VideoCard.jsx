@@ -8,7 +8,7 @@ export default function VideoCard({ videoUrl, status }) {
             <source src={videoUrl} type="video/mp4" />
           </video>
         ) : (
-          <img src="/placeholder.svg" alt="Video placeholder" className="w-full h-full object-cover" />
+          <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/placeholder.svg`} alt="Video placeholder" className="w-full h-full object-cover" />
         )}
         {!videoUrl && status && (
           <div className="absolute inset-0 grid place-items-center bg-black/30 text-white text-sm">Rendering…</div>
